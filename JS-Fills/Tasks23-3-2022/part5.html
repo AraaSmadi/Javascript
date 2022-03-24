@@ -5,16 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise #5 Input check </title>
-
+    <title>Document</title>
 </head>
 
 <body>
-    <label for="">Password (min 6 characters ):</label>
-    <input type="password" id="pass"><br><br>
-    <label for="">Repeat password:</label>
-    <input type="password" id="confpass">
-    <script src="part5.js"></script>
+    <label>Password(min 6 characters)</label>
+    <input type="password" value="" name="" id="pWord" onchange="password()">
+    <label class="warning"></label>
+    <br> <br>
+    <label>Repeat Password</label>
+    <input type="password " name=" " id="rPWord " onchange="repeatPasswor() ">
+    <label class="warning "></label>
+    <br><br>
+    <input type="submit " name=" " id="submit " style="display: none; ">
+    <script>
+        let x = document.getElementsByClassName('warning')[0];
+        let y = document.getElementsByClassName('warning')[1];
+
+
+        function password() {
+            let pass = document.getElementById('pWord').value;
+
+            if (pass.length < 6) {
+                x.innerHTML = 'Too Short'
+                x.style.color = 'red';
+            } else {
+                x.innerHTML = ''
+            }
+        }
+
+        function repeatPasswor() {
+            let pass = document.getElementById('pWord').value
+            let repeatPass = document.getElementById('rPWord').value;
+            if (pass != repeatPass) {
+                y.innerHTML = "The Two Password don 't match"
+                y.style.color = 'red ';
+            } else {
+                y.innerHTML = ""
+                document.getElementById('submit ').style.display = 'block '
+            }
+
+        }
+    </script>
 </body>
 
 </html>
