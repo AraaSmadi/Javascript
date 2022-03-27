@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+</head>
+
+<body>
+    <form action="" style="padding:70px;">
+        <fieldset>
+            <legend>Personal Informations</legend>
+            <label for="name">Your name:
+            </label>
+            <input type="text" name="name" id="name" placeholder="EX:Ara'a"><br><br>
+
+
+            <label for="age"> Your Age:</label>
+            <input type="number" id="age" name="age" placeholder="EX:25"><br><br>
+
+
+            <label for="gender">gender:</label>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for=""> Male</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for=""> Female</label>
+            <br><br>
+
+
+            <label for="brief">Brief Description:</label>
+            <textarea name="brief" id="brief" rows="3" placeholder="Description"></textarea><br><br>
+
+
+            <label for="mu">Your major and university:</label>
+            <input type="text" height="500px" name="mu" id="mu" placeholder="EX:YU / MIS"><br><br>
+
+
+            <label for="bd">Birth Date :</label>
+            <input type="date" id="bd" name="bd" placeholder="dd/mm/yyyy"><br><br>
+
+            <label for="proglang">Programming Language you prefer:</label>
+            <textarea name="prog-lang" id="proglang" rows="3" placeholder="Programming Language"></textarea>
+            <br><br>
+
+            <label for="image">your image:</label>
+            <input type="file" id="image" name="image"><br><br>
+
+            <label for="siblings"> siblings number:</label><br><br>
+            <label for="Fmembers">Family member numbers:</label>
+            <input type="number" id="Fmembers" name="Fmembers" placeholder="Numbers"><br><br>
+
+
+            <label for="member1"> Family member 1:</label>
+            <input type="text" id="member1" name="member1" placeholder="name">
+
+            <label for="BDM1">Brief Description:</label>
+            <textarea name="BDM1" id="BDM1" rows="1" placeholder="Education"></textarea><br><br>
+
+            <label for="member2 "> Family member 2:</label>
+            <input type="text" id="member2 " name="member2 " placeholder="name">
+
+            <label for="BDM2">Brief Description:</label>
+            <textarea name="BDM2" id="BDM2" rows="1" placeholder="Education"></textarea><br><br>
+            <br><br>
+            <button onclick="sub()" id="btn">Submit</button>
+
+        </fieldset>
+    </form>
+    <p id="par" style="border: rebeccapurple 3px dotted ; width: 400px; background-color: lavenderblush; margin-left:70px ; padding: 10px;"></p>
+
+    <script src="Part1.js">
+    </script>
+</body>
+
+</html>
