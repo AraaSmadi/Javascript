@@ -14,11 +14,9 @@ async function change() {
     let result = document.getElementById('name').value;
     const response = await fetch(`https://www.breakingbadapi.com/api/characters?name=${result}`);
     const data = await response.json();
-    let index = 0;
     for (i = 0; i < data.length; i++) {
         if (result == data[i].name) {
-            index = i;
-            document.getElementById('se').innerHTML = 'nickname selected is :  ' + data[index].nickname;
+            document.getElementById('se').innerHTML = 'nickname selected is :  ' + data[i].nickname;
         }
     }
 }
