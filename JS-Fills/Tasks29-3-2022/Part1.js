@@ -16,7 +16,7 @@ async function change() {
     const data = await response.json();
     let index = 0;
     for (i = 0; i < data.length; i++) {
-        if (result === data[i].name) {
+        if (result == data[i].name) {
             index = i;
             document.getElementById('se').innerHTML = 'nickname selected is :  ' + data[index].nickname;
         }
